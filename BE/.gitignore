@@ -1,0 +1,8 @@
+bin
+obj
+packages
+.vs/
+.vs/config/applicationhost.config
+CompanyDatabase.API/CompanyDatabase.API.csproj.user
+CompanyDatabase.API/Properties/PublishProfiles/test local FS.pubxml
+CompanyDatabase.API/Properties/PublishProfiles/test local FS.pubxml.user

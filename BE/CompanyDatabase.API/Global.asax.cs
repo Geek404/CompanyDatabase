@@ -1,0 +1,28 @@
+﻿using System.Collections;
+using System.Web.Http;
+using System.Web.Mvc;
+using System.Web.Optimization;
+using System.Web.Routing;
+using CompanyDatabase.API;
+
+namespace CompanyDatabase.API
+{
+   public class WebApiApplication : System.Web.HttpApplication
+   {
+      protected void Application_Start()
+      {
+         AreaRegistration.RegisterAllAreas();
+         GlobalConfiguration.Configure(WebApiConfig.Register);
+         FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+         RouteConfig.RegisterRoutes(RouteTable.Routes);
+         BundleConfig.RegisterBundles(BundleTable.Bundles);
+      }
+
+      protected void Application_BeginRequest()
+      {
+         if (!((IList)Request.Headers.AllKeys).Contains("Origin") || Request.HttpMethod != "OPTIONS") return;
+         Response.Flush();
+         Response.End();
+      }
+   }
+}

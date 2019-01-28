@@ -76,8 +76,6 @@ export default class Edit extends Component {
       contact_person: this.state.contact_person
     };
     axios.put('https://frostberry-api.azurewebsites.net/api/company/update/', client).then(() => this.setState({ redirect: true }));
-
-    this.props.history.push('/load');
   }
 
   render() {

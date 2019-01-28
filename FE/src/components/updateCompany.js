@@ -86,7 +86,7 @@ export default class Edit extends Component {
     }
     return (
       <div style={{ marginTop: 10 }}>
-        <h3 align="center">Update Business</h3>
+        <h3 align="center">..::UPDATE::..</h3>
         <form onSubmit={this.onSubmit}>
           <div className="form-group">
             <label>Company Name:  </label>
@@ -107,7 +107,7 @@ export default class Edit extends Component {
           </div>
           <div className="form-group">
             <label>Address: </label>
-            <input type="text"
+            <textarea rows="4"
               className="form-control"
               value={this.state.address}
               onChange={this.onChangeAddress}

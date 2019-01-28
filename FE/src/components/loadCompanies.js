@@ -26,9 +26,9 @@ export default class Load extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{ marginTop: 40 }}>
                 <h3 align="center">{icons.office} Company List</h3>
-                <table className="table table-striped" style={{ marginTop: 20 }}>
+                <table className="table table-dark" style={{ marginTop: 20 }}>
                     <thead>
                         <tr>
                             <th>Id</th>

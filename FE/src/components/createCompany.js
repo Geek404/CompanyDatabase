@@ -75,7 +75,7 @@ export default class Create extends Component {
         }
         return (
             <div style={{ marginTop: 10 }}>
-                <h3>Add New Business</h3>
+                <h3>..::CREATE::..</h3>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Company Name:  </label>
@@ -96,7 +96,7 @@ export default class Create extends Component {
                     </div>
                     <div className="form-group">
                         <label>Address: </label>
-                        <input type="text"
+                        <textarea rows="4" 
                             className="form-control"
                             value={this.state.address}
                             onChange={this.onChangeAddress}

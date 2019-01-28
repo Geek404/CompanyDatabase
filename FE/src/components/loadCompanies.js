@@ -33,7 +33,7 @@ export default class Load extends Component {
                         <tr>
                             <th>Id</th>
                             <th>Company Name</th>
-                            <th>Number of Employee</th>
+                            <th>Number of Employees</th>
                             <th>Address</th>
                             <th>Contact Phone</th>
                             <th>Contact Person</th>
